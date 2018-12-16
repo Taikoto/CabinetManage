@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FingerManage</class>
+ <widget class="QWidget" name="FingerManage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>680</width>
+    <height>456</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="1" column="0" rowspan="2">
+    <widget class="ZDiyList" name="policeList"/>
+   </item>
+   <item row="2" column="1" colspan="2">
+    <widget class="QGroupBox" name="gbFinger">
+     <property name="minimumSize">
+      <size>
+       <width>425</width>
+       <height>250</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>425</width>
+       <height>250</height>
+      </size>
+     </property>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>201</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>选择需要设置的指纹及类型：</string>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="right05">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>110</y>
+        <width>63</width>
+        <height>52</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="icon">
+       <iconset resource="../ImgSrc.qrc">
+        <normaloff>:/img/fingerprint/rightfinger/Finger5_1.png</normaloff>:/img/fingerprint/rightfinger/Finger5_1.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>56</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="autoRaise">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="left02">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>50</y>
+        <width>34</width>
+        <height>89</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="icon">
+       <iconset resource="../ImgSrc.qrc">
+        <normaloff>:/img/fingerprint/leftfinger/Finger2_1.png</normaloff>:/img/fingerprint/leftfinger/Finger2_1.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>27</width>
+        <height>83</height>
+       </size>
+      </property>
+      <property name="autoRaise">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="left03">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>40</y>
+        <width>32</width>
+        <height>96</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="icon">
+       <iconset resource="../ImgSrc.qrc">
+        <normaloff>:/img/fingerprint/leftfinger/Finger3_1.png</normaloff>:/img/fingerprint/leftfinger/Finger3_1.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>25</width>
+        <height>90</height>
+       </size>
+      </property>
+      <property name="autoRaise">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="right04">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>50</y>
+        <width>36</width>
+        <height>86</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="icon">
+       <iconset resource="../ImgSrc.qrc">
+        <normaloff>:/img/fingerprint/rightfinger/Finger4_1.png</normaloff>:/img/fingerprint/rightfinger/Finger4_1.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>29</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="autoRaise">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="right06">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>140</y>
+        <width>106</width>
+        <height>100</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="icon">
+       <iconset resource="../ImgSrc.qrc">
+        <normaloff>:/img/fingerprint/rightfinger/rightPalm.png</normaloff>:/img/fingerprint/rightfinger/rightPalm.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>99</width>
+        <height>94</height>
+       </size>
+      </property>
+      <property name="autoRaise">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="left06">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>140</y>
+        <width>106</width>
+        <height>100</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="icon">
+       <iconset resource="../ImgSrc.qrc">
+        <normaloff>:/img/fingerprint/leftfinger/leftPalm.png</normaloff>:/img/fingerprint/leftfinger/leftPalm.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>99</width>
+        <height>94</height>
+       </size>
+      </property>
+      <property name="autoRaise">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="left01">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>80</y>
+        <width>37</width>
+        <height>69</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="icon">
+       <iconset resource="../ImgSrc.qrc">
+        <normaloff>:/img/fingerprint/leftfinger/Finger1_1.png</normaloff>:/img/fingerprint/leftfinger/Finger1_1.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>30</width>
+        <height>63</height>
+       </size>
+      </property>
+      <property name="autoRaise">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="left05">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>110</y>
+        <width>63</width>
+        <height>52</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="icon">
+       <iconset resource="../ImgSrc.qrc">
+        <normaloff>:/img/fingerprint/leftfinger/Finger5_1.png</normaloff>:/img/fingerprint/leftfinger/Finger5_1.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>56</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="autoRaise">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="right03">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>40</y>
+        <width>32</width>
+        <height>96</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="icon">
+       <iconset resource="../ImgSrc.qrc">
+        <normaloff>:/img/fingerprint/rightfinger/Finger3_1.png</normaloff>:/img/fingerprint/rightfinger/Finger3_1.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>25</width>
+        <height>90</height>
+       </size>
+      </property>
+      <property name="autoRaise">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="right02">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>50</y>
+        <width>34</width>
+        <height>89</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="icon">
+       <iconset resource="../ImgSrc.qrc">
+        <normaloff>:/img/fingerprint/rightfinger/Finger2_1.png</normaloff>:/img/fingerprint/rightfinger/Finger2_1.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>27</width>
+        <height>83</height>
+       </size>
+      </property>
+      <property name="autoRaise">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="right01">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>80</y>
+        <width>37</width>
+        <height>69</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="icon">
+       <iconset resource="../ImgSrc.qrc">
+        <normaloff>:/img/fingerprint/rightfinger/Finger1_1.png</normaloff>:/img/fingerprint/rightfinger/Finger1_1.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>30</width>
+        <height>63</height>
+       </size>
+      </property>
+      <property name="autoRaise">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="left04">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>50</y>
+        <width>36</width>
+        <height>86</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="icon">
+       <iconset resource="../ImgSrc.qrc">
+        <normaloff>:/img/fingerprint/leftfinger/Finger4_1.png</normaloff>:/img/fingerprint/leftfinger/Finger4_1.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>29</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="autoRaise">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="typeNormal">
+      <property name="geometry">
+       <rect>
+        <x>222</x>
+        <y>10</y>
+        <width>70</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>正常</string>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="typeHijack">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>10</y>
+        <width>70</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>劫持</string>
+      </property>
+     </widget>
+    </widget>
+   </item>
+   <item row="0" column="0">
+    <widget class="QWidget" name="widget" native="true">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="label_3">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>警号：</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="policeNo">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>30</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="searchButton">
+        <property name="minimumSize">
+         <size>
+          <width>80</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>搜索</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="0" column="1" rowspan="2">
+    <widget class="PoliceInfo" name="policeInfo">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>300</width>
+       <height>0</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="2" rowspan="2">
+    <widget class="QGroupBox" name="groupBox">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>Rfid卡号：</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="rfidCardNo">
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="addRfid">
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="text">
+         <string>绑定RFID卡</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="delRfid">
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="text">
+         <string>解绑RFID卡</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ZDiyList</class>
+   <extends>QGroupBox</extends>
+   <header location="global">zdiylist.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>PoliceInfo</class>
+   <extends>QGroupBox</extends>
+   <header location="global">policeinfo.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../ImgSrc.qrc"/>
+ </resources>
+ <connections/>
+</ui>

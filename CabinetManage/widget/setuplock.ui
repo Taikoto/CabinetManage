@@ -1,0 +1,646 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SetupLock</class>
+ <widget class="QWidget" name="SetupLock">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>640</width>
+    <height>420</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QPushButton" name="Reset">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>50</y>
+     <width>80</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>重启</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="TestPort">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>80</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>测试串口</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="EXLedTwinkle">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>130</y>
+     <width>80</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>LED闪烁</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ReadWeight">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>210</y>
+     <width>80</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>读取重量</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="EXLedState">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>170</y>
+     <width>80</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>LED状态</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="EXQuery">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>10</y>
+     <width>80</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>扩展查询</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Warning">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>210</y>
+     <width>80</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>报警</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Query">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>90</y>
+     <width>80</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>查询</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="EXLed">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>90</y>
+     <width>80</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>LED</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="EXOpenLock">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>50</y>
+     <width>80</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>扩展开锁</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="OpenLock">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>130</y>
+     <width>80</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>开锁</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="SetOpenTime">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>170</y>
+     <width>80</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>设置开锁时间</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="exBox">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>50</y>
+     <width>100</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>1</number>
+   </property>
+   <item>
+    <property name="text">
+     <string>0x00</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>0x01</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>0x02</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>0x03</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>0x04</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>0x05</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>0x06</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>0x07</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>0x08</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>0x09</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>0x0A</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>0x0B</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>0x0C</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>0x0D</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>0x0E</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>0x0F</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>0x10</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>10</y>
+     <width>80</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>串口端口：</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>50</y>
+     <width>80</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>扩展板编号：</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>90</y>
+     <width>80</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>开锁持续时间：</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="timeBox">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>90</y>
+     <width>100</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>5</number>
+   </property>
+   <item>
+    <property name="text">
+     <string>0x00</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>0x01</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>0x02</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>0x03</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>0x04</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>0x05</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>0x06</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>0x07</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>0x08</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>0x09</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>0x0A</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>0x0B</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>0x0C</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>0x0D</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>0x0E</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>0x0F</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>0x10</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>0x11</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>0x12</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>0x13</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>0x14</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QCheckBox" name="warning">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>290</y>
+     <width>161</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>报警开关</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>130</y>
+     <width>80</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>锁编号：</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="lockBox">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>130</y>
+     <width>100</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>01</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>02</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>04</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>08</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>10</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>20</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>40</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>80</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>FF</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QComboBox" name="weightBox">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>170</y>
+     <width>100</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>0x00</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>0x01</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>0x02</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>0x03</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>0x04</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>0x05</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>0x06</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>0x07</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>0x08</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>0x09</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>170</y>
+     <width>80</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>电子秤编号：</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="allLock">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>250</y>
+     <width>80</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>锁全开</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>10</y>
+     <width>160</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>COM3</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="setPort">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>10</y>
+     <width>80</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>设置串口</string>
+   </property>
+  </widget>
+  <widget class="QTextBrowser" name="textBrowser">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>210</y>
+     <width>421</width>
+     <height>201</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="setScale">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>250</y>
+     <width>80</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>置零电子秤</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Home</class>
+ <widget class="QWidget" name="Home">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>627</width>
+    <height>288</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QToolButton" name="outPolice">
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="text">
+      <string>出警</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../ImgSrc.qrc">
+       <normaloff>:/img/icon/police.png</normaloff>:/img/icon/police.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>110</width>
+       <height>110</height>
+      </size>
+     </property>
+     <property name="toolButtonStyle">
+      <enum>Qt::ToolButtonTextUnderIcon</enum>
+     </property>
+     <property name="autoRaise">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QToolButton" name="urgent">
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="text">
+      <string>紧急出警</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../ImgSrc.qrc">
+       <normaloff>:/img/icon/emergency.png</normaloff>:/img/icon/emergency.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>110</width>
+       <height>110</height>
+      </size>
+     </property>
+     <property name="toolButtonStyle">
+      <enum>Qt::ToolButtonTextUnderIcon</enum>
+     </property>
+     <property name="autoRaise">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="2">
+    <widget class="QToolButton" name="apply">
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="text">
+      <string>申请出警</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../ImgSrc.qrc">
+       <normaloff>:/img/icon/police.png</normaloff>:/img/icon/police.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>110</width>
+       <height>110</height>
+      </size>
+     </property>
+     <property name="toolButtonStyle">
+      <enum>Qt::ToolButtonTextUnderIcon</enum>
+     </property>
+     <property name="autoRaise">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="3">
+    <widget class="QToolButton" name="infoCheck">
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="text">
+      <string>信息查询</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../ImgSrc.qrc">
+       <normaloff>:/img/icon/information.png</normaloff>:/img/icon/information.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>110</width>
+       <height>110</height>
+      </size>
+     </property>
+     <property name="toolButtonStyle">
+      <enum>Qt::ToolButtonTextUnderIcon</enum>
+     </property>
+     <property name="autoRaise">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="4">
+    <widget class="QToolButton" name="dutyManage">
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="text">
+      <string>值班管理</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../ImgSrc.qrc">
+       <normaloff>:/img/icon/duty.png</normaloff>:/img/icon/duty.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>110</width>
+       <height>110</height>
+      </size>
+     </property>
+     <property name="toolButtonStyle">
+      <enum>Qt::ToolButtonTextUnderIcon</enum>
+     </property>
+     <property name="autoRaise">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QToolButton" name="keep">
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="text">
+      <string>枪弹保养</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../ImgSrc.qrc">
+       <normaloff>:/img/icon/bulletKeep.png</normaloff>:/img/icon/bulletKeep.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>110</width>
+       <height>110</height>
+      </size>
+     </property>
+     <property name="toolButtonStyle">
+      <enum>Qt::ToolButtonTextUnderIcon</enum>
+     </property>
+     <property name="autoRaise">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QToolButton" name="dumping">
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="text">
+      <string>枪弹报废</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../ImgSrc.qrc">
+       <normaloff>:/img/icon/bulletScrap.png</normaloff>:/img/icon/bulletScrap.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>110</width>
+       <height>110</height>
+      </size>
+     </property>
+     <property name="toolButtonStyle">
+      <enum>Qt::ToolButtonTextUnderIcon</enum>
+     </property>
+     <property name="autoRaise">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="2">
+    <widget class="QToolButton" name="inStorage">
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="text">
+      <string>枪弹入库</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../ImgSrc.qrc">
+       <normaloff>:/img/icon/bulletReturn.png</normaloff>:/img/icon/bulletReturn.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>110</width>
+       <height>110</height>
+      </size>
+     </property>
+     <property name="toolButtonStyle">
+      <enum>Qt::ToolButtonTextUnderIcon</enum>
+     </property>
+     <property name="autoRaise">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="3">
+    <widget class="QToolButton" name="tempDeposit">
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="text">
+      <string>临时存放</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../ImgSrc.qrc">
+       <normaloff>:/img/icon/tempGet.png</normaloff>:/img/icon/tempGet.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>110</width>
+       <height>110</height>
+      </size>
+     </property>
+     <property name="toolButtonStyle">
+      <enum>Qt::ToolButtonTextUnderIcon</enum>
+     </property>
+     <property name="autoRaise">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="4">
+    <widget class="QToolButton" name="fingerManage">
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="text">
+      <string>指纹管理</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../ImgSrc.qrc">
+       <normaloff>:/img/icon/finger.png</normaloff>:/img/icon/finger.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>110</width>
+       <height>110</height>
+      </size>
+     </property>
+     <property name="toolButtonStyle">
+      <enum>Qt::ToolButtonTextUnderIcon</enum>
+     </property>
+     <property name="autoRaise">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../ImgSrc.qrc"/>
+ </resources>
+ <connections/>
+</ui>

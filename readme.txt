@@ -1,0 +1,1 @@
+build environment Qt4.8.6-MSVC2013

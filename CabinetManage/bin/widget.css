@@ -1,0 +1,176 @@
+/*设置顶部状态栏背景颜色*/
+QWidget#stateWidget{
+	background-color: rgb(0, 0, 0);
+}
+
+/*设置所有的字体颜色和字体*/
+QWidget{
+	font: 12px "Microsoft YaHei";
+	color: rgb(255, 255, 255);
+}
+
+QWidget:disabled {
+
+}
+
+QSlider::groove:horizontal {
+border: 1px solid #4A708B;
+background: #FFFFF0;
+height: 5px;
+border-radius: 1px;
+padding-left:-1px;
+padding-right:-1px;
+}
+
+QSlider::sub-page:horizontal {
+background: qlineargradient(x1:0, y1:0, x2:0, y2:1, 
+    stop:0 #B1B1B1, stop:1 #c4c4c4);
+background: qlineargradient(x1: 0, y1: 0.2, x2: 1, y2: 1,
+    stop: 0 #5DCCFF, stop: 1 #1874CD);
+border: 1px solid #4A708B;
+height: 10px;
+border-radius: 2px;
+}
+
+QSlider::add-page:horizontal {
+background: #FFFFFF;
+border: 0px solid #777;
+height: 10px;
+border-radius: 2px;
+}
+
+QSlider::handle:horizontal 
+{
+    background: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, 
+    stop:0.6 #45ADED, stop:0.778409 rgba(255, 255, 255, 255));
+
+    width: 11px;
+    margin-top: -3px;
+    margin-bottom: -3px;
+    border-radius: 5px;
+}
+
+QSlider::handle:horizontal:hover {
+    background: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0.6 #2A8BDA, 
+    stop:0.778409 rgba(255, 255, 255, 255));
+
+    width: 11px;
+    margin-top: -3px;
+    margin-bottom: -3px;
+    border-radius: 5px;
+}
+
+QSlider::sub-page:horizontal:disabled {
+background: #00009C;
+border-color: #999;
+}
+
+
+QLabel#title{
+	font: 13px bold;
+	color: rgb(255, 170, 255);
+}
+
+QLabel#title1{
+	font: 13px bold;
+	color: rgb(255, 170, 255);
+}
+
+QLabel#title2{
+	font: 13px bold;
+	color: rgb(255, 170, 255);
+}
+
+QGroupBox{
+	border: 1px solid rgb(85, 170, 255);
+	border-radius: 3px;
+}
+
+QPushButton{
+ 	border: 1px solid rgba(255, 255, 255, 180);
+	border-radius: 5px;
+    background-color: rgba(255, 255, 255, 20);
+}
+
+QPushButton:hover{
+ 	border: 1px solid rgb(085, 170, 255);
+	border-radius: 5px;
+    background-color: rgba(255, 255, 255, 20); 
+}
+
+QPushButton:pressed{
+	border: 1px solid rgba(085, 170, 255);
+	border-radius: 5px;
+    background-color: rgba(255, 255, 255, 100);  
+}
+
+QPushButton:disabled{
+ 	border: 1px solid rgba(100, 100, 100, 80);
+	border-radius: 5px;
+    background-color: rgba(255, 255, 255, 20);
+    color: rgba(200, 200, 200, 200);
+}
+
+QLineEdit{
+	border: 1px solid rgba(200, 200, 200, 120);
+	border-radius: 3px;
+    background-color: rgba(200, 200, 200, 20);
+}
+
+QTextEdit{
+    border: 1px solid rgba(100, 100, 100, 120);
+	border-radius: 3px;
+	background-color: rgba(200, 200, 200, 20);
+}
+
+QTextBrowser{
+    border: 0px;
+	background-color: rgba(0, 0, 0, 0);
+}
+
+QComboBox{
+    color: rgb(0, 0, 0);
+}
+
+QComboBox QAbstractItemView{
+	color: rgb(0, 0, 0);
+	background-color: rgba(255, 255, 255, 100);
+}
+
+/*设置QCheckBox图标大小*/
+QCheckBox::indicator{
+    width: 50px; height: 25px;
+}
+
+QCheckBox::indicator:unchecked{
+    image: url(:/img/setup/toggle-off.png);
+}
+
+QCheckBox::indicator:checked{
+    image: url(:/img/setup/toggle-on.png);
+}
+
+QRadioButton::indicator{
+    width: 24px; height: 24px;
+}
+
+QRadioButton::indicator:checked{
+    image: url(:/img/misc/radio_checked.png);
+}
+
+QRadioButton::indicator:unchecked{
+    image: url(:/img/misc/radio_unchecked.png);
+}
+
+/*QToolButton鼠标放上后*/
+QToolButton:hover{
+	border: 0px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+/*QToolButton按下按钮后*/
+QToolButton:pressed{
+	border: 1px solid rgba(200, 200, 200, 180);
+	border-radius: 5px;
+    background-color: rgba(255, 255, 255, 100);
+}
